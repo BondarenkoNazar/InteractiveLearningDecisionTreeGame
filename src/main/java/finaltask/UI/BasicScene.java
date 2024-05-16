@@ -44,7 +44,7 @@ public class BasicScene {
         BorderPane pane = new BorderPane();
         pane.setCenter(vBox);
 
-        this.scene = new Scene(pane, 600, 450);
+        this.scene = new Scene(pane, 700, 450);
     }
 
     public void setLabelText(String text) {

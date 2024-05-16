@@ -34,7 +34,11 @@ public class SceneBuilder {
         BasicScene basicScene = new BasicScene(this.tree.getData(), "Yes", "No");
 
         basicScene.getFirstButton().setOnAction(actionEvent -> {
-            this.node = node.getChildren().get(0);
+            try{
+                this.node = node.getChildren().get(0);
+            } catch (Exception e){
+                this.stage.setScene(finishScene());
+            }
 
             if(this.node.getChildren().isEmpty()){
                 this.stage.setScene(this.checkScene());
