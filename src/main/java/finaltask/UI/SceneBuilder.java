@@ -45,7 +45,6 @@ public class SceneBuilder {
             }else {
                 basicScene.setLabelText(this.node.getData());
             }
-
         });
 
         basicScene.getSecondButton().setOnAction(actionEvent -> {
